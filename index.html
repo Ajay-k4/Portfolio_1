@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/af2e7c57fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p class="style">Aspiring Software Engineer</p>
+          <h1>Hi, I'm <span>Ajay Uyyala</span><br />from SRM University AP</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------- About --------- -->
+
+    <div id="about">
+      <div class="conatiner">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a Computer Science Engineering student at SRM University with a solid background in C++ and
+              Python. I am passionate about technology and enjoy solving problems. I am eager to use my skills and
+              experience to contribute to real-world projects and make a positive impact in the tech industry.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />HTML, CSS, JavaScript, ReactJS, Node js, Express js</li>
+                <li><span>Databases</span><br />MySQL, PostgreSQL, MongoDB</li>
+                <li><span>Languages</span><br />C,C++,Python,Java</li>
+                <li><span>Soft Skills</span><br />Communication, Leadership, Teamwork, Problem-Solving</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>January 2024 - March 2024</span><br />Virtual Developer Intern at Salesforce
+                </li>
+                <li>
+                  <span>August 2023 - December 2023</span><br />Summer Research Intern at SRM
+                  University, AP
+                </li>
+                <li>
+                  <span>June 2023 - july 2023</span><br />Artificial Intelligence
+                  Intern at IBM SkillBuild
+                </li>
+
+                
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021 - 2025</span><br />SRM University, AP-Amaravathi</li>
+                <li>
+                  <span>2019 - 2021</span><br />Sri Chaitanya Junior College,AP-Vijayawada
+                </li>
+                <li><span>2018 - 2019</span><br />Sree Valmeeki High School,AP-Kadiri</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------- Services ------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Experience</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Virtual Developer Intern</h2>
+            <p>
+              Completed a Salesforce Developer Virtual Internship, gaining hands-on experience with Salesforce CRM,
+              Apex, Visualforce, and Lightning Web Components to develop custom applications and streamline business processes using Workflow Rules, Process Builder, and Flow Builder.
+
+            </p>
+            <a href="">Salesforce</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Research Intern</h2>
+            <p>
+             Implemented a Machine Learning-based Multiple Disease Prediction System,Describe analytical skills.Led the development of a practical Multiple Disease Prediction System, leveraging advanced algorithms to innovate in healthcare solutions.
+            </p>
+            <a href="">SRM University AP</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Artificial Intelligence Intern</h2>
+            <p>
+              Led AI-based Mental Fitness Tracker development, highlighting
+              hands-on expertise in technolog. Spearheaded innovative AI project
+              for mental health , showcasing commitment to well-being.
+            </p>
+            <a href="">IBM Skills Build</a>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------- Portfolio ----------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Blockchain Based CrowdFunding Platform</h3>
+              <p>
+                Built a decentralized platform on the Ethereum blockchain with MetaMask integration for secure cryp-
+tocurrency transactions.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Online Job Portal</h3>
+              <p>
+                Built a platform where users can log in, manage companies, and create, edit, or delete job listings with real-time updates and advanced search functionality
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Multiple Disease Prediction System</h3>
+              <p>
+                Created a machine learning system to predict heart disease, diabetes, and Parkinson’s disease, utilizing
+comprehensive datasets and optimizing algorithms for accurate predictions.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ---------------- Contact --------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> ajay_uyyala@srmap.edu.in>
+            <p><i class="fa-solid fa-phone"></i> 9014742964</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/ajay-uyyala-66417224b"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/Ajay-k4"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/urslovely_ajay?igsh=b29vOGR5NnJweW9w"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1886JebLvOAOwUrlkWGb_Vfjx_i96RhvA/view?usp=sharing" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+
+            <span id="msg"></span>
+
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy
+          Tutorials
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyb0Nj4lSyQeTWJL2-NzbFmrc5qwsLjeYQ64M8TirOf2LNnv-KhrzutEfubmM7S-VKSSQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg")
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
